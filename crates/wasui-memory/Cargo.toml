@@ -1,0 +1,18 @@
+[package]
+name = "wasui-memory"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+description.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[dependencies]
+js-sys = { workspace = true, optional = true }
+thiserror = { workspace = true }
+wasm-bridge = { workspace = true, optional = true }
+
+[features]
+js-sys = ["dep:js-sys"]
+wasm-bridge = ["dep:wasm-bridge"]
